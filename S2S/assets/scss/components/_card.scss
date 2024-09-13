@@ -1,0 +1,65 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    grid-gap: 24px 24px;
+    .card-item{
+        background-color: $white;
+        border-radius: 20px;
+        padding: 2rem;
+        @include flex-center;
+        flex-direction: column;  
+        gap: 40px; 
+        transition: 0.3s;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        &:hover{
+            &::after{
+                top: 0%;
+            }
+            .card-content{              
+                .card-title{  
+                    color:$white;
+                }
+                .card-desc{
+                    color:$white;
+                }
+            }
+        }
+        &::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: $brand-primary;
+            position: absolute;
+            left: 0%;
+            top: -100%;
+            z-index: -2;
+            transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
+        }        
+        .card-media{
+          @include size(92px, 92px);
+          background-color: $txt-highlight;
+          border-radius: 50%;
+          @include flex;
+        }
+        .card-content{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .card-title{
+                font-size: $h5-font-size;
+                font-weight: 600;
+                color:$title-clr;
+            }
+            .card-desc{
+                font-size: $font-size-md;              
+                color:$title-clr;
+            }
+        }
+    }
+}

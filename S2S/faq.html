@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ's</title>
+    <link rel="canonical" href="https://www.unfoldlabs.com/Sticks2Stones/" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+
+        <link href="assets/scss/main.css" rel="stylesheet" />
+        <link href="assets/scss/home.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .t-s-header{
+            background: linear-gradient(270deg, #2A3254 0%, #435085 100%) !important; 
+            height: 90px;
+            display: grid;
+            align-items: center;
+        }
+        
+        header.t-s-header img {
+                height: 60px;
+            }
+            .main-inner-sec {
+                padding: 20px;
+                padding-top: 50px;
+            }
+            /* .header .navbar .navbar-brand {
+                height: 100%;
+            } */
+            .header {
+                background-color: #000;
+                padding: 3px 20px !important;
+                padding-bottom: 0px !important;
+            }
+            /* .logo img {
+                padding-top: 6px;
+            } */
+            .container-fixed {
+                max-width: 1140px;  
+            }
+            .header .navbar .nav-menu {
+                display: flex;
+                align-items: center;
+                gap: 37px;
+                margin-left: -4px;
+            }
+        .main-inner-sec h1{
+            text-align: center;
+            color: #435085;
+            font-size: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        /* .main-inner-sec p {
+            color: #424242;
+        
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal; 
+            font-weight: 400;
+            line-height: 25px;
+        } 
+        .main-inner-sec h4{
+            color: #435085;
+            
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 170.3%;
+        } 
+        .main-inner-sec h5{
+            color: #435085;
+            font-family: Roboto;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 170.3%;
+        } 
+        .main-inner-sec li {
+            color: #424242;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            line-height: 25px;
+        } */
+        footer{
+    color: #424242;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0px -1px 5px #ccc;
+        }
+        .inner-text-sec {
+    padding-left: 15px;
+}
+
+
+.accordion-content {
+  display: none;
+  color: rgba(27, 28, 49, 0.7);
+  line-height: 24px;
+  margin-bottom: 5px;
+  background: rgb(185 80 236 / 0%);
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid rgb(255 167 13 / 25%);
+}
+.accordion-heading {
+    color: #3c4878;
+    padding: 15px 6px;
+    border-bottom: 1px solid rgb(255 167 13 / 25%);
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-right: 20px;
+}
+.accordion-heading:hover {
+  background: #fbf2ff;
+}
+.accordion-heading:after {
+  content: "+";
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  top: 10px;
+}
+.accordion-heading.active:after {
+  content: "-";
+}
+.accordion-heading.active {
+  color: #fff;
+  background: linear-gradient(180deg, #FFB80F 0%, #FD7A09 100%);
+}
+.accordion-items {
+    border-top: 1px rgb(255 167 13 / 25%) solid;
+}
+.mobile-sec {
+                display: none;
+            }
+.header .is-scrolling {
+    padding: 8px;
+    background-color: #000;
+    box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, .1);
+}
+@media only screen and (max-width: 430px) {
+                .app-stores-sec{  
+                    display: none;  
+                }
+                .mobile-sec {
+                    display: block;
+                }
+                .header .navbar {
+                    position: relative;
+                    padding: 0;
+                }
+                .header .navbar .bar {
+                    display: none;
+                }
+                
+                .policy_terms {
+                    display: none !important;
+                }
+                .mobile-sec .policy_terms{
+                    display: flex !important;
+                    /* font-weight: 600; */
+                    gap: 5px !important;
+                }
+                .mobile-sec .copyright_text {
+                    font-size: 13px !important;
+                    color: #707070;
+                }
+                footer {
+                    color: #424242;
+                    text-align: center;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    height: 100%;
+                    display: grid;
+                    align-items: center;
+                    /* box-shadow: 0px -1px 5px #ccc; */
+                }
+            }
+
+            @media only screen and (max-width: 1024px) {
+                .header {
+                    background-color: #000;
+                    padding: 0px 10px !important;
+                }
+                .header .navbar .nav-button {
+                    display: none;
+                }
+                .header .navbar .nav-menu {
+                    display: none;
+                }
+                .app-stores-sec .apps-info .column-1 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    width: 50vw;
+                }
+                .app-stores-sec .apps-info .column-2 {
+                    display: grid;
+                    align-items: center;
+                    /* gap: 2rem; */
+                    border-left: 1px solid #ccc;
+                    padding-left: 32px;
+                    flex-wrap: wrap;
+                }
+                .app-stores-sec .apps-info .column-1 .h4-title {
+                    font-size: 20px;
+                }
+                .footer-section .footer-content {
+                    padding: 0 20px;
+                }
+                .header .navbar {
+                    padding: 0px;
+                }
+            }
+    </style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1152.0" data-gr-ext-installed="">
+    <header class="header fixed-top" id="header">
+        <div class="container-fixed">
+            <nav class="navbar ">
+                <a href="s2s.html" class="navbar-brand logo">
+                    <img src="assets/images/s2s-logo.svg" alt="s2s logo" />
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="s2s.html">Home</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="s2s.html#why-choose-sec">Why S2S?</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="s2s.html#howitworks">How It Works?</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="s2s.html#aboutus">About Us</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="s2s.html#faq">FAQ's</a></li>
+                </ul>
+                <a href="s2s.html#contactus" class="nav-button" >Contact Us</a>
+                <div class="bar" id="bar">
+                    <div class="burger-line bar-1"></div>
+                    <div class="burger-line bar-2"></div>
+                    <div class="burger-line bar-3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fixed">
+        <div class="main-inner-sec">
+            <h1>FAQ's </h1>
+            <div class="accordion-items ">
+                <div class="accordion-heading active" > How does S2S work?</div>
+                <div class="accordion-content" style="display: block;">S2S is a mobile app that allows users to rent tools, equipment, and more from fellow users in their area. Users can browse listings, make reservations, and complete transactions securely within the app.</div>
+                <div class="accordion-heading">How do I rent an item?</div>
+                <div class="accordion-content"> To rent an item, simply browse through the available listings on the app, select the item you need, choose your rental dates, and complete the reservation process. You can then arrange for pickup or delivery with the Product Owner. </div>
+                <div class="accordion-heading">How do I list my items for rent?</div>
+                <div class="accordion-content"> Listing your items on S2S is easy! Just create an account, upload photos and details of your items, and set your rental price and availability S2S will review and publish.  Your items will then be visible to potential Users.</div>
+                
+                <div class="accordion-heading">Is it safe to rent and lend items through S2S?</div>
+                <div class="accordion-content"> Yes, S2S prioritizes the safety and security of all users. We verify user profiles, provide secure payment processing, and offer user reviews to ensure a trusted rental experience.</div>
+
+                <div class="accordion-heading">What types of items can I rent on S2S?</div>
+                <div class="accordion-content">
+                     S2S offers a wide range of items for rent, including tools, equipment, outdoor gear, and more. You'll find everything you need for your DIY projects, outdoor adventures, and everyday needs.
+                </div>
+                
+                <div class="accordion-heading">How are rental rates determined?</div>
+                <div class="accordion-content">
+                    Rental rates are set by the Product Owners of the items. They can choose their preferred rental price based on the item's value, condition, and demand. Product Owners can compare prices and choose the best option for their needs.
+                </div>
+
+                <div class="accordion-heading">What if I need to cancel a reservation order?</div>
+                <div class="accordion-content">
+                     If you need to cancel a reservation order, please refer to the cancellation policy set by the Product Owner of the item. Some reservations may be subject to cancellation fees, while others may allow for free cancellations within a certain timeframe.
+                </div>
+
+                <div class="accordion-heading">What is the maximum duration to cancel the reservation?
+                </div>
+                <div class="accordion-content">
+                    The S2S system will allow Owner of the product can cancel within 24hrs from the order placing.
+                </div>
+
+                <div class="accordion-heading">Can I extend the rental period?</div>
+                <div class="accordion-content">
+                     Yes, you can extend your rental period if the Product Owner of the item agrees. Simply reach out to them through the app to discuss the extension and any additional fees.
+                </div>
+
+                <div class="accordion-heading">How do I communicate with the Product Owner of an item?</div>
+                <div class="accordion-content">
+                     You can communicate with the Product Owner of an item through the app. This allows for easy coordination of pickup, drop-off, and any other details related to the rental.
+                </div>
+
+                <div class="accordion-heading">	What if there's an issue with the rented item?</div>
+                <div class="accordion-content">
+                     If you encounter any issues with a rented item, please contact the Product Owner immediately to discuss a resolution. If needed, S2S customer support is available to assist and facilitate a fair resolution.
+                </div>
+
+                <div class="accordion-heading">	Are there any fees associated with using S2S?</div>
+                <div class="accordion-content">
+                     S2S is free to download and use for browsing and listings. However, there may be processing fees and tax fees associated with renting items, which will be clearly displayed before you are placing an order.
+                </div>
+
+                <div class="accordion-heading">	How are payments processed on S2S?</div>
+                <div class="accordion-content">
+                     Payments on S2S are processed securely through Stripe, with transparent pricing displayed during transactions.
+                </div>
+
+                <div class="accordion-heading">	Can I request specific pickup / return times?</div>
+                <div class="accordion-content">
+                     Yes, you can contact the Product Owner to arrange specific pickup / return times that work for both parties. 
+                </div>
+
+                <div class="accordion-heading">	What if I accidentally damage an item during the rental period?</div>
+                <div class="accordion-content">
+                     Accidents can happen! If you accidentally damage an item during the rental period, please contact the Product Owner immediately to discuss the issue. Some Product Owners may charge damage costs as per <a href="terms-of-service.html" target="_blank">S2S Terms of Service</a> , which can be used to cover damages if necessary.
+                </div>
+
+                <div class="accordion-heading">	Can I leave a review for the Product Owner?</div>
+                <div class="accordion-content">
+                    Yes, after completing a rental transaction Users can leave reviews and ratings.  These reviews help build trust within the community and provide valuable feedback for future transactions.
+                </div>
+
+                <div class="accordion-heading">	What if I can't find the item I'm looking for?</div>
+                <div class="accordion-content">
+                     If you can't find a specific item you're looking for, try expanding your search radius.
+                </div>
+
+                <div class="accordion-heading">	Are there any restrictions on who can rent or list items?</div>
+                <div class="accordion-content">
+                     S2S welcomes users of all backgrounds, but there may be age restrictions or other requirements for certain items. Product Owners have the right to set specific rental criteria, such as age limits or rental qualifications.
+                </div>
+
+                <div class="accordion-heading">	Can I rent an item for multiple days or weeks?</div>
+                <div class="accordion-content">
+                     Yes, you can rent items for extended periods, including multiple days, weeks, or even months. Simply select your desired rental dates when placing an order.
+                </div>
+
+                <div class="accordion-heading">	How can I contact S2S customer support?</div>
+                <div class="accordion-content">
+                    For any additional questions or assistance, please reach out to customer support at <a href="mailto:team-s2s@sticks2stones.us" target="_blank"> team-s2s@sticks2stones.us</a>. Our team is here to help with any inquiries or concerns you may have.
+                </div>
+
+                <div class="accordion-heading">	Can I track the status of my order?</div>
+                <div class="accordion-content">
+                    S2S offers a user-friendly order tracking feature, enabling users to monitor their orders in real time.  Just Sign into your account, navigate to my orders section, and track the progress of your order. 
+                </div>
+                <div class="accordion-heading">	Can I modify or cancel the order?</div>
+                <div class="accordion-content">
+                    Yes, you can navigate to the "My Order" section to access and edit your order details as needed.
+                </div>
+            </div>
+       
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="container-fixed">
+            <div class="footer-content">
+                <div class="mobile-sec">
+                    <div class="policy_terms">
+                        <p class="copyright_text">© Copyright <a class="policy_link" target="_blank" href="https://smartiansolutions.com/">Smartian Solutions</a>.</p>
+                        <p class="copyright_text">2024 All Rights Reserved</p>
+                    </div> 
+                </div>
+
+                <div class="policy_terms">
+                    <p class="copyright_text">All Rights Reserved</p>
+                    <a href="privacy-policy.html" class="policy_link">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="policy_link">Terms of Service</a>
+                </div>
+                <!-- <div class="social-icons">
+                    <a href="#" class="social-link" aria-label="facebook link" title="Facebook">
+                        <img src="assets/images/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-link" aria-label="instagram link" title="Instagram">
+                        <img src="assets/images/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter link" title="Twitter">
+                        <img src="assets/images/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Youtube link" title="Youtube">
+                        <img src="assets/images/youtube.svg" alt="Youtube">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Linkedin link" title="Linkedin">
+                        <img src="assets/images/linkedin.svg" alt="Linkedin">
+                    </a>
+                </div> -->
+                <div class="policy_terms">
+                    <p class="copyright_text">© Copyright <a class="policy_link" target="_blank" href="https://smartiansolutions.com/">Smartian Solutions</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="assets/js/jquery-3.6.3.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+  $(".accordion-items").on("click", ".accordion-heading", function () {
+    $(this).toggleClass("active").next().slideToggle();
+
+    $(".accordion-content").not($(this).next()).slideUp(300);
+
+    $(this).siblings().removeClass("active");
+  });
+});
+</script>
+</body>
+</html>

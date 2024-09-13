@@ -1,0 +1,27 @@
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+    grid-gap: 16px 16px;
+    .card-area{
+        background-color: $white;
+        border-radius: 1rem;
+        padding: 20px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;       
+        .card-header{
+           @include flex-center;
+            gap: 4px;
+            .h3-title{
+               font-size:$font-size-lg;
+               color:$title-clr;
+               font-weight: 600;
+            }
+        }
+        .card-content{
+            font-size:$font-size-md;
+            color:$text-color;
+        }
+    }
+}

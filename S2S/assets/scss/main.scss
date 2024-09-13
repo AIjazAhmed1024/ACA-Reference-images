@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+//Abstracts
+@import '../scss/abstracts/variables';
+@import '../scss/abstracts/mixins';
+
+//Base
+@import '../scss/base/reset';
+
+//Layout - header n footer
+@import '../scss/layout/header';
+@import '../scss/layout/footer';

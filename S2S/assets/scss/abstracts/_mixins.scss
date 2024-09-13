@@ -1,0 +1,114 @@
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;    
+}
+@mixin flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin border-radius($radius){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+}
+@mixin text-shorten {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ }
+ @mixin text-fill{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+ }
+ @mixin button($bg-color, $text-color, $border-radius, $padding-x, $padding-y) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: $padding-y $padding-x;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken($bg-color, 10%);
+    }  
+    &:focus {
+      outline: none;
+    }
+}
+@mixin button-outline($color, $background, $border) {
+    $active-background: darken($background, 10%);
+    $active-border: darken($border, 12%); 
+    color: $color;
+    background-color: $background;
+    border-color: $border;   
+    &:hover{
+      color: $color;
+      background-color: darken($background, 17%);
+          border-color: darken($border, 25%);
+    } 
+    &:focus,
+    &:active {
+      color: $color;
+      background-color: $active-background;
+          border-color: $active-border;
+    }
+   
+  }
+
+  // Form control sizing
+
+@mixin input-size($input-height, $padding-vertical, $padding-horizontal, $line-height, $border-radius) {  
+    height: $input-height;
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size-base;
+    line-height: $line-height;
+    border-radius:$border-radius;
+    border: 1px solid $gray;
+} 
+
+@mixin form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: $label-color;
+  }
+
+  // Sizing shortcuts
+
+@mixin size($width, $height: null) {
+    width: $width;
+    @if $height {
+      height: $height;
+    }
+  }
+
+  // flex container
+
+@mixin flex-container($direction: row, $justify-content: flex-start, $align-items: stretch, $flex-wrap: nowrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $flex-wrap;
+  }
+  
+  // flex items
+
+  @mixin flex-item($flex-grow: 0, $flex-shrink: 1, $flex-basis: auto, $align-self: auto) {
+    flex-grow: $flex-grow;
+    flex-shrink: $flex-shrink;
+    flex-basis: $flex-basis;
+    align-self: $align-self;
+  }
+
+  // Box shadow
+
+@mixin box-shadow($x: 0, $y: 0, $blur: 10px, $color: rgba(0, 0, 0, 0.2)) {
+  box-shadow: $x $y $blur $color;
+}   

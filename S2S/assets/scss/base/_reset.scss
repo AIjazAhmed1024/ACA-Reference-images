@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container-fixed {
+    width: min(1140px, 100%);
+    margin: 0 auto;    
+}
+.text-center {
+    text-align: center;
+}
+textarea {
+    overflow: auto;
+    width: 100%;
+    height: 150px;
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+strong {
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: #1A45C2;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    border-style: none;
+}
+select,
+input,
+button {
+    outline: none;
+}
+ul,
+ol {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+select,
+input,
+button {
+    outline: none;
+}
+
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .container-fixed {
+        padding: 4px 10px;
+    }
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 540px) {   
+    section {
+        padding: 16px;
+    }
+}

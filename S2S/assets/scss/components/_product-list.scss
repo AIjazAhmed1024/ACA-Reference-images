@@ -1,0 +1,100 @@
+.product-row{
+    display: flex;
+    gap: 32px;  
+    margin-bottom: 52px; 
+    &.row-reverse{
+        flex-direction: row-reverse;
+        .product-right-cnr{
+            .product-title-info{
+                .small{
+                    color:$brand-primary;                   
+                }
+                .h3-title{                   
+                    .highlight{
+                        color:$brand-primary;
+                    }
+                }
+            }
+        }
+    }
+    .product-left-cnr{
+      max-width: 100%;
+    }
+    .product-right-cnr{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 50%;
+        .product-title-info{
+            .small{
+                color:$brand-secondary;
+                font-size: $h6-font-size;
+            }
+            .h3-title{
+                color:$black;
+                font-size:$h4-font-size;
+                font-weight: 500;
+                .highlight{
+                    color:$brand-secondary;
+                }
+            }
+        }
+        .product-list{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .product-list-item{
+                display: flex;
+                gap:4px;
+               .product-icon{
+                padding: 32px;
+               } 
+               .product-content{
+                    .product-title{
+                        font-size: 26px;
+                        color: $title-clr;
+                        font-weight: 500;
+                    }
+                    .product-desc{
+                        color: rgba(112, 112, 112, 1);
+                        font-size: 1rem;
+
+                    }
+               }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .product-row{       
+        flex-direction: column;  
+        gap: 20px;
+        margin-bottom: 0px;   
+        &.row-reverse{
+            flex-direction: column;
+            padding-top: 20px;           
+        }    
+        .product-left-cnr{
+          max-width: 100%;
+        }
+        .product-right-cnr{            
+            width: 100%;            
+            .product-list{               
+                .product-list-item{                   
+                   .product-icon{
+                    padding: 32px;
+                        img{
+                            max-width: fit-content;
+                        }
+                   } 
+                   .product-content{
+                        .product-title{
+                            font-size:$h5-font-size;                           
+                        }                       
+                   }
+                }
+            }
+        }
+    }
+ }

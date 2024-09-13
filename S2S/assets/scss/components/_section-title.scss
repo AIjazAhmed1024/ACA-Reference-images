@@ -1,0 +1,35 @@
+.section-title{
+    @include flex;
+     padding-bottom: 52px;
+     flex-direction: column;      
+     .h2-title{
+         font-size:$h2-font-size;
+         color: $title-clr; 
+         font-weight: 400;
+         .txt-underline{
+             color: $black;
+             font-weight:bold;
+             text-decoration:underline;
+             text-decoration-thickness:10px;
+             text-underline-offset:-4px;  
+             text-decoration-color:$txt-highlight;
+             text-decoration-skip-ink:none;
+         }
+     }
+     .para{
+         font-size:$font-base;
+         color: $text-color; 
+     }
+     .sub-title{
+        font-size:$font-size-lg;
+        color: $title-clr;
+    }
+ }
+
+ @media only screen and (max-width: 540px) {
+    .section-title{       
+         .h2-title{
+             font-size:1.75rem;
+         }        
+     }    
+ }
